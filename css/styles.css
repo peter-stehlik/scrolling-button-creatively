@@ -1,0 +1,90 @@
+/* BASIC SETTINGS */
+body {
+	text-align:center;
+}
+h1, h2, h3 {
+	padding:0;
+	margin:0;
+	color:#fff;
+}
+a {
+	color:#000;
+	text-decoration:none;
+}
+section, footer {
+	height:75vh;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#home {
+	height:100vh;
+	background:#1abc9c;
+}
+#services {
+	background:#2ecc71;
+}
+#about {
+	background:#3498db;
+}
+#contact {
+	background:#9b59b6;
+}
+footer {
+	height:50vh;
+	background:#2c3e50;
+}
+
+/* SCROLL EFFECTS PART */
+.scroll-more-box {
+	position:fixed;
+	bottom:-300px; /* to create a circle effect */
+	left:50%;
+	width:400px;
+	height:400px;
+	padding:30px 0 0;
+	margin-left:-200px;
+	background:#fff;
+	border-radius:200px 200px 0 0;
+	transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.scroll-more-box img {
+	transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.scroll-more-box.small {
+	bottom:10px;
+	width:80px;
+	height:80px;
+	padding:0;
+	border-radius:40px;
+	margin-left:-40px;
+}
+.scroll-more-box.small img {
+	margin-top:23px;
+}
+.scroll-more-box span {
+	display:block;
+	padding:0 0 10px;
+	text-transform:uppercase; 
+	font-weight:700;
+}
+.scroll-more-box.small span {
+	display:none;
+}
+.scroll-more-box.small.goTop img {
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.scroll-more {
+	display:block;
+}
+.scroll-more-box.small .scroll-more {
+	height:80px;
+}
